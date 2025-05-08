@@ -4,9 +4,8 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import http from "http";
 import { Server } from "socket.io";
-
-require('dotenv').config();
-
+import dotenv from 'dotenv';
+dotenv.config();
 const app = express();
 const port = process.env.PORT || 3003;
 
