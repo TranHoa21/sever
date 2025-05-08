@@ -8,13 +8,13 @@ import { Server } from "socket.io";
 require('dotenv').config();
 
 const app = express();
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 3003;
 
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
 
-    origin: ['https://serenity-adventures-demo.vercel.app', 'https://admin-serenity-adventures.vercel.app','https://sever-production-702f.up.railway.app', 'http://localhost:3000', 'http://localhost:3002'],
+    origin: ['https://sever-production-702f.up.railway.app', 'http://localhost:3001', 'http://localhost:3000'],
     credentials: true
 }));
 
@@ -26,7 +26,7 @@ const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
 
-        origin: ["https://serenity-adventures-demo.vercel.app/", "https://admin-serenity-adventures.vercel.app", 'http://localhost:3000', 'http://localhost:3002'],
+        origin: ["https://serenity-adventures-demo.vercel.app/", "https://admin-serenity-adventures.vercel.app", 'http://localhost:3001', 'http://localhost:3002'],
         methods: ["GET", "POST"],
         credentials: true
     },

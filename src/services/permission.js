@@ -1,4 +1,4 @@
-import pool from '../../app.js';
+import pool from '../../index.js';
 
 export const getUserRole = async (code) => {
     const client = await pool.connect();

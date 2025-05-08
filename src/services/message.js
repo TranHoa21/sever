@@ -1,4 +1,4 @@
-import { getReceiverSocketId, io } from "../../app.js";
+import { getReceiverSocketId, io } from "../../index.js";
 import { Op } from 'sequelize';
 import { createHash } from 'crypto';
 import db from '../models/index.js';
