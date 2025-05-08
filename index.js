@@ -1,5 +1,5 @@
 import express from 'express';
-import { initRouter } from './src/routers/index.js';
+import initRouter from './src/routers/index.js';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import http from "http";
