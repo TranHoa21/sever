@@ -1,5 +1,5 @@
 import db from '../models/index.js';
-const cloudinary = require('cloudinary').v2;
+import { v2 as cloudinary } from 'cloudinary';
 import models from '../models/index.js';
 const { Post } = models;
 

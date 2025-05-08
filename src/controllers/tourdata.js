@@ -1,5 +1,5 @@
 import * as services from '../services/index.js';
-const cloudinary = require('cloudinary').v2;
+import { v2 as cloudinary } from 'cloudinary';
 import Joi from 'joi';
 
 export const createTourData = async (req, res) => {

@@ -1,5 +1,5 @@
 import * as services from '../services/index.js';
-const cloudinary = require('cloudinary').v2;
+import { v2 as cloudinary } from 'cloudinary';
 
 
 export const creatUser = async (req, res) => {
