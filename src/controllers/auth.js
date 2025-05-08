@@ -1,7 +1,7 @@
 
 
 
-import * as services from '../services';
+import * as services from '../services/index.js';
 
 export const signup = async (req, res) => {
     try {

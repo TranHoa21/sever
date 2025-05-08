@@ -1,4 +1,4 @@
-import * as services from '../services';
+import * as services from '../services/index.js';
 
 export const getMessages = async (req, res) => {
     try {

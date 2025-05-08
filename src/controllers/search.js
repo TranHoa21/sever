@@ -1,4 +1,4 @@
-import { searchProductsService, filterProductsService } from '../services/search';
+import { searchProductsService, filterProductsService } from '../services/index.js/search';
 
 
 export const searchProductsController = async (req, res) => {

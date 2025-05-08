@@ -1,4 +1,4 @@
-import * as services from '../services';
+import * as services from '../services/index.js';
 export const createNotification = async (req, res) => {
     const { userId, bookingId, message } = req.body
 

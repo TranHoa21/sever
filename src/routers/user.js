@@ -2,7 +2,7 @@ import { Router } from 'express';
 import express from 'express';
 import uploadCloud from '../middleware/cloudinary.js'
 
-import * as controllers from '../controllers'
+import * as controllers from '../controllers/index.js'
 
 const router = Router();
 

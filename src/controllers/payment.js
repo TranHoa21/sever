@@ -1,4 +1,4 @@
-import * as services from '../services';
+import * as services from '../services/index.js';
 
 export const createOrderController = async (req, res) => {
     const totalAmount = req.body.totalAmount;

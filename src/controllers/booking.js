@@ -1,4 +1,4 @@
-import * as services from '../services';
+import * as services from '../services/index.js';
 
 export const createNewBooking = async (req, res) => {
     const { userId, name, email, tour_name, start_day, total_amount, people, payment_status, phone_number } = req.body
