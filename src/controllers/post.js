@@ -1,7 +1,6 @@
 import * as services from '../services/index.js';
 const cloudinary = require('cloudinary').v2;
 import Joi from 'joi';
-import { Post } from '../models';
 
 
 export const createPost = async (req, res) => {
