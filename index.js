@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
 
-    origin: ['https://sever-production-702f.up.railway.app', "https://serenity-adventures-demo.vercel.app/", "https://admin-serenity-adventures.vercel.app", 'http://localhost:3001', 'http://localhost:3000'],
+    origin: ['https://sever-production-702f.up.railway.app', "https://serenity-adventures-demo.vercel.app", "https://admin-serenity-adventures.vercel.app", 'http://localhost:3001', 'http://localhost:3000'],
     credentials: true
 }));
 
