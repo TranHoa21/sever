@@ -1,7 +1,6 @@
 import db from '../models/index.js';
 const cloudinary = require('cloudinary').v2;
-import { Post } from '../models';
-import Sequelize from 'sequelize';
+import { Post } from '../models/index.js';
 
 
 
