@@ -1,6 +1,7 @@
 import jwt from "jsonwebtoken";
 import db from "../models/index.js";
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 
 const protectRoute = async (req, res, next) => {
 	try {
