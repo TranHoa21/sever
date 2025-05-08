@@ -5,6 +5,7 @@ import cookieParser from 'cookie-parser';
 import http from "http";
 import { Server } from "socket.io";
 import dotenv from 'dotenv';
+import pkg from 'pg';
 dotenv.config();
 const app = express();
 const port = process.env.PORT || 3003;
@@ -98,7 +99,8 @@ io.on("connection", (socket) => {
 });
 
 
-const { Pool } = require('pg');
+
+const { Pool } = pkg;
 
 const pool = new Pool({
     user: "default",
